@@ -1,0 +1,18 @@
+img{
+  width: 50px;
+}
+
+.enter
+{
+  font-size: 2.2rem;
+  padding: 0 8px 0 5px;
+  color: #fff;
+  background-color: #198754;
+}
+
+.enter:hover{
+  background-color: #fff;
+  color: #198754;
+  border-radius: 5px;
+  transition: all .4s ease;
+}

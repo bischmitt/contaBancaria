@@ -22,11 +22,14 @@ import { FormsModule} from '@angular/forms';
     HeaderComponent,
     FooterComponent,
     ModificarComponent,
-    InicioComponent
+    InicioComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

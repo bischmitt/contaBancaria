@@ -1,1 +1,27 @@
-<p>cadastrar works!</p>
+<div class="container card1 my-5 w-50">
+  <form>
+
+    <div class="row">
+      <h2 class="text-center my-4">Cadastrar Clientes</h2>
+      <div class="mb-4 col-12">
+        <label class="form-label">Cliente</label>
+        <input [(ngModel)]="tarefa.nomeCliente" type="text" class="form-control" name="nomeCliente">
+      </div>
+    </div>
+    <div class="row">
+      <div class="mb-4 col-6">
+        <label class="form-label">Conta</label>
+        <input [(ngModel)]="tarefa.contaCliente" type="text" class="form-control" name="contaCliente">
+      </div>
+
+      <div class="mb-4 col-6">
+        <label class="form-label">Valor da Transferência</label>
+        <input [(ngModel)]="tarefa.valor" type="number" class="form-control" name="valor">
+      </div>
+
+      <div class="my-3 text-end">
+        <button (click)="adicionar()" class="btn btn-success">Cadastrar</button>
+      </div>
+    </div>
+  </form>
+</div>
