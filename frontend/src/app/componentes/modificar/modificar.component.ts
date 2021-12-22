@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Tarefa, TarefaService } from './../../servicos/tarefa.service';
 import { ActivatedRoute, Router } from '@angular/router';
+import * as bootstrap from 'bootstrap';
 
 @Component({
   selector: 'app-modificar',
@@ -15,15 +16,14 @@ export class ModificarComponent implements OnInit {
     id_transferencia: '',
   };
 
-  msg: boolean;
-
+  msg: string;
 
   constructor(
     private TarefaService: TarefaService,
     private router: Router,
     private activateRoute: ActivatedRoute
   ) {
-    (this.msg = false )
+    this.msg = 'conta editada com sucesso!';
   }
 
   ngOnInit(): void {
@@ -49,11 +49,4 @@ export class ModificarComponent implements OnInit {
     this.router.navigate(['/inicio']);
   }
 
-  alertMsg() {
-    if (this.msg == true) {
-      return 'Sucesso';
-    } else {
-      return '';
-    }
-  }
 }
